@@ -6,25 +6,22 @@ import Spline from "@splinetool/react-spline";
 const navigation = [
   {
     name: "Contact Me",
-    href: "#",
+    href: "mailTo: arjunadabir@gmail.com",
     current: true,
   },
-  { name: "Projects", href: "#", current: false, location: {} },
-  { name: "Socials", href: "#", current: false, location: {} },
+  { name: "About Me", href: "#aboutme", current: false },
+  { name: "Projects", href: "#projectname", current: false },
+  { name: "Socials", href: "#footer", current: false },
 ];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const scrollToBottom = () => {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: "smooth",
-  });
-};
-
 export default function Example() {
+  const openInNewTab = (url) => {
+    window.open(url, "_blank");
+  };
   return (
     <Disclosure id="navbar" as="nav" className="bg-bg-gray " on>
       {({ open }) => (
@@ -53,10 +50,17 @@ export default function Example() {
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <a
+                        target={item.target}
                         key={item.name}
                         href={item.href}
-                        onClick={() => {
-                          return scrollToBottom;
+                        onClick={(e) => {
+                          let hero = document.getElementById(
+                            item.href.substring(1)
+                          );
+                          item.current &&
+                            openInNewTab("mailTo: arjunadabir@gmail.com");
+                          e.preventDefault(); // Stop Page Reloading
+                          hero && hero.scrollIntoView({ behavior: "smooth" });
                         }}
                         className={classNames(
                           item.current
