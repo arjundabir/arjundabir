@@ -10,7 +10,11 @@ export default function App() {
     <>
       <Header />
       <Animation />
-      <Projects />
+      <div class="flex justify-center">
+        <Projects />
+        <Projects />
+        <Projects />
+      </div>
       <Footer />
     </>
   );
