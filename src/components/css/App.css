@@ -1,3 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #2d2e32;
+  color: #58595f;
+  margin: 0;
+  font-family: Roboto, sans-serif, Arial;
+}
 .center {
   display: flex;
   justify-content: center;
