@@ -1,6 +1,6 @@
-import { Fragment, useState } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import React from "react";
+import { Disclosure } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Spline from "@splinetool/react-spline";
 
 const navigation = [
@@ -42,7 +42,7 @@ export default function Example() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-center sm:justify-between ">
                 <div className="flex flex-shrink-0 items-center ">
-                  <a href="#">
+                  <a href="/">
                     <Spline scene="https://prod.spline.design/NH06bKoh7cYsRvNR/scene.splinecode" />
                   </a>
                 </div>

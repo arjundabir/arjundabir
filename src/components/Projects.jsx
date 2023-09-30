@@ -19,19 +19,19 @@ export default function Projects(props) {
         }}
         className={"w-96 m-5"}
       >
-        <article class="overflow-hidden outline outline-2 rounded-lg transition bg-bg-gray">
+        <article class="overflow-hidden outline outline-2 rounded-lg bg-bg-gray">
           <img
             alt="Office"
             src={props.image}
             class="h-56 w-full object-cover"
           />
 
-          <div class="bg-bg-gray sm:p-6">
+          <div class="bg-bg-gray p-6">
             <time datetime="2022-10-10" class="block text-xs text-gray-400">
               {props.date}
             </time>
 
-            <h3 class="mt-0.5 text-lg text-white ">{props.title}</h3>
+            <h3 class="mt-0.5 text-lg text-white">{props.title}</h3>
 
             <p class="h-20 mt-2 line-clamp-3 text-sm/relaxed text-gray-text-gray-400">
               {props.content}

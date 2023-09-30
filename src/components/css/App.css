@@ -12,3 +12,28 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.announcement {
+  display: none;
+}
+
+@media (max-width: 500px) and (orientation: landscape) {
+  .announcement {
+    display: none;
+  }
+  .page {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+  .announcement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .page {
+    display: none;
+  }
+}
