@@ -1,4 +1,5 @@
 ## Hello! I'm Arjun Dabir.
+![Arjun Dabir Logo](https://i.ibb.co/h7RQ2nK/logo-github.png)
 
 🏫 Student at UCI
 
@@ -7,5 +8,3 @@
 🧠 Learning about Ranking Algorithms and Web Search. Feel free to contact me using any of the links below and I would love to discuss about this.
 
 🎾 Always looking for someone to play a match with.
-
-![Arjun Dabir Logo](https://i.ibb.co/QnbJWQ0/Untitled-design.png)
